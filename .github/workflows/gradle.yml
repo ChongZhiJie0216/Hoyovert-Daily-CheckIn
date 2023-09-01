@@ -36,5 +36,5 @@ jobs:
       with:
         arguments: build test
       env:
-        USER_1_ID: ${{ secrets.MY_TOKEN_ID }}
-        USER_1_TOKEN: ${{ secrets.MY_TOKEN }}
+        USER_1_ID: ${{ secrets.USER_1_ID }}
+        USER_1_TOKEN: ${{ secrets.USER_1_TOKEN }}
