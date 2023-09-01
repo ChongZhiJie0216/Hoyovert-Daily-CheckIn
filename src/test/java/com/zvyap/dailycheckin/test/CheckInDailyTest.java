@@ -26,9 +26,8 @@ public class CheckInDailyTest {
                         .token(HoyoToken.of(System.getenv("USER_1_ID"), System.getenv("USER_1_TOKEN")))
                         .game(GameType.GENSHIN_IMPACT)
                         .game(GameType.HONKAI_STAR_RAIL)
+                        .game(HONKAI_IMPACT_3RD)
                         .build()
-
-
         ));
     }
 
