@@ -31,7 +31,7 @@ public class CheckInDailyTest {
                                 .build())
                         .game(GameType.GENSHIN_IMPACT)
                         .game(GameType.HONKAI_STAR_RAIL)
-                        .game(HONKAI_IMPACT_3RD)
+                        .game(GameType.HONKAI_IMPACT_3RD)
                         .build()
         ));
     }
