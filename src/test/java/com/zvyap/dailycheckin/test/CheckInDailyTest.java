@@ -15,7 +15,7 @@ import java.util.List;
 
 public class CheckInDailyTest {
 
-    private final HoyoverseAPI api = new HoyoverseAPI(APIEnvironment.OVERSEA, APILocale.EN_US);
+    private final HoyoverseAPI api = new HoyoverseAPI(APIEnvironment.OVERSEA, APILocale.ZH_CN);
     private final DailyCheckInFeature feature = new DailyCheckInFeature(api);
 
     @Test
