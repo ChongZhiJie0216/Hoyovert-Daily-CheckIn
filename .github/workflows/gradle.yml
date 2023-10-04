@@ -5,7 +5,7 @@
 # This workflow will build a Java project with Gradle and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-gradle
 
-name: "Daily Check In Task - ${{ steps.date.outputs.date }}"
+name: "Daily Check In Task"
 
 on:
   # Allow manual start
@@ -22,9 +22,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Get current date
+    - name: Set up current date
       id: date
-      run: echo "::set-output name=date::$(date +'%d/%m/%Y')"
+      run: echo "CURRENT_DATE=$(date +'%d/%m/%Y')" >> $GITHUB_ENV
 
     - uses: actions/checkout@v3
     - name: Set up JDK 17
